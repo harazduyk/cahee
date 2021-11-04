@@ -1,4 +1,4 @@
-
+@import "mixins";
 
 .main {
     width: 100%;
@@ -6,6 +6,7 @@
     & .fresh {
         width: 100%;
         background-image: url("../images/background_1.png");
+        @include backgroundImage;
         padding: 4% 8% 3% 8%;
         &__head {
             display: flex;
@@ -63,4 +64,22 @@
 
         }
     }
+    .about {
+        width: 100%;
+        background-image: url("../images/background_2.png");
+        @include backgroundImage;
+        padding: 5% 12% 16% 55%;
+        &__text h1 {
+            font-size: 90px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+        &__text p {
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 1.5;
+            color: #ffffff;
+        }
+    }
+    
 }

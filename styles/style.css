@@ -84,4 +84,23 @@
 .main .fresh__scroll {
   margin: 25% 0 0% 52%;
 }
+
+.main .about {
+  width: 100%;
+  background-image: url("../images/background_2.png");
+  padding: 5% 12% 16% 55%;
+}
+
+.main .about__text h1 {
+  font-size: 90px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.main .about__text p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #ffffff;
+}
 /*# sourceMappingURL=style.css.map */
