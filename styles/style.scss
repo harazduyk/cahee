@@ -1,0 +1,66 @@
+
+
+.main {
+    width: 100%;
+    font-family: Raleway;
+    & .fresh {
+        width: 100%;
+        background-image: url("../images/background_1.png");
+        padding: 4% 8% 3% 8%;
+        &__head {
+            display: flex;
+            justify-content: space-between;
+            & img {
+                margin: -2% 0 0 4.5%;
+            }
+        }
+        &__nav {
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            & a {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 700;
+                color: #262626;
+            }
+            &_home {
+                border-top: 3px solid #ff6033;
+                padding-top: 1%;
+                margin-top: -1.5%;
+            }
+        }
+        &__body {
+            margin: 22% 0 0 5%;
+            & h1 {
+                font-size: 60px;
+                font-weight: 900;
+                color: #262626;
+            }
+            & p {
+                width: 30%;
+                font-size: 17px;
+                font-weight: 300;
+                color: #262626;
+                margin: -2% 0 2% 0%;
+            }
+            & a {
+                width: 15%;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: 300;
+                color: #ffffff;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                background-color: #ff6033;
+                padding: 1%;
+            }
+        }
+        &__scroll {
+            margin: 25% 0 0% 52%;
+
+        }
+    }
+}
