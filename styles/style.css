@@ -6,6 +6,9 @@
 .main .fresh {
   width: 100%;
   background-image: url("../images/background_1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 4% 8% 3% 8%;
 }
 
@@ -88,6 +91,9 @@
 .main .about {
   width: 100%;
   background-image: url("../images/background_2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 5% 12% 16% 55%;
 }
 
@@ -102,5 +108,67 @@
   font-weight: 300;
   line-height: 1.5;
   color: #ffffff;
+}
+
+.main .services {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("../images/background_3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10% 0% 10% 15%;
+}
+
+.main .services__list_element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.3);
+  margin-top: 5%;
+}
+
+.main .services__list_element h5 {
+  height: 100px;
+  font-size: 20px;
+  font-weight: 700;
+  border-right: 1px solid #bababa;
+}
+
+.main .services__list_element_online {
+  padding: 40px 85px 0 20px;
+}
+
+.main .services__list_element_quality {
+  padding: 40px 98px 0 25px;
+}
+
+.main .services__list_element_domestic {
+  width: 71%;
+  padding: 28px 7px 0 0;
+}
+
+.main .services__list_element_well {
+  padding: 40px 103px 0 20px;
+}
+
+.main .services__list_element img {
+  padding-left: 5%;
+}
+
+.main .services h1 {
+  font-size: 90px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 10% 0 0 15%;
 }
 /*# sourceMappingURL=style.css.map */
