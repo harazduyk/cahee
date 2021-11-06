@@ -40,7 +40,6 @@
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 700;
-  color: #262626;
 }
 
 .main .fresh__nav_home {
@@ -56,32 +55,29 @@
 .main .fresh__body h1 {
   font-size: 60px;
   font-weight: 900;
-  color: #262626;
 }
 
 .main .fresh__body p {
   width: 30%;
   font-size: 17px;
   font-weight: 300;
-  color: #262626;
   margin: -2% 0 2% 0%;
 }
 
 .main .fresh__body a {
   width: 15%;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 300;
-  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #ff6033;
+  color: #ffffff;
   padding: 1%;
+  background-color: #ff6033;
 }
 
 .main .fresh__scroll {
@@ -192,7 +188,6 @@
   font-size: 17px;
   font-weight: 300;
   line-height: 1.5;
-  color: #262626;
   margin: -3% auto 3% auto;
 }
 
@@ -232,8 +227,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   color: #ffffff;
-  background-color: #5585a2;
   padding: 1%;
+  background-color: #5585a2;
   margin: 2% auto 4% auto;
 }
 
@@ -254,8 +249,8 @@
 .main .subscribe p {
   width: 40%;
   font-size: 17px;
-  line-height: 1.2;
   font-weight: 300;
+  line-height: 1.2;
 }
 
 .main .subscribe input {
@@ -452,8 +447,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   color: #ffffff;
-  background-color: #f72b3b;
   padding: 1%;
+  background-color: #f72b3b;
   margin: 3% auto 0 auto;
 }
 
@@ -555,5 +550,35 @@
 .footer h5 span {
   font-weight: 700;
   color: #ff2b58;
+}
+
+.main .fresh__body a:hover {
+  background-color: #ff5f3385;
+}
+
+.main .services__list_element:hover {
+  background-color: #26262681;
+}
+
+.main .gallery__button a:hover {
+  background-color: #02090ed3;
+}
+
+.main .subscribe button:hover {
+  background-color: #727b8f;
+}
+
+.main .blog a:hover {
+  background-color: #c3abe6;
+}
+
+.main .contact__communication_form input:hover {
+  border-left: 5px solid #355b82;
+  background-color: #00c4c4;
+}
+
+.main .contact__communication_form textarea:hover {
+  border-left: 5px solid #355b82;
+  background-color: #00c4c4;
 }
 /*# sourceMappingURL=style.css.map */

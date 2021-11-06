@@ -24,7 +24,6 @@
                 text-transform: uppercase;
                 font-size: 16px;
                 font-weight: 700;
-                color: #262626;
             }
             &_home {
                 border-top: 3px solid #ff6033;
@@ -37,26 +36,16 @@
             & h1 {
                 font-size: 60px;
                 font-weight: 900;
-                color: #262626;
             }
             & p {
                 width: 30%;
-                font-size: 17px;
-                font-weight: 300;
-                color: #262626;
+                @include titleP;
                 margin: -2% 0 2% 0%;
             }
             & a {
                 width: 15%;
-                text-decoration: none;
-                font-size: 20px;
-                font-weight: 300;
-                color: #ffffff;
-                display: flex;
-                text-align: center;
-                justify-content: center;
+                @include buttonS;
                 background-color: #ff6033;
-                padding: 1%;
             }
         }
         &__scroll {
@@ -70,13 +59,11 @@
         @include backgroundImage;
         padding: 5% 12% 16% 55%;
         &__text h1 {
-            font-size: 90px;
-            font-weight: 700;
+            @include titleH1;
             color: #ffffff;
         }
         &__text p {
-            font-size: 17px;
-            font-weight: 300;
+            @include titleP;
             line-height: 1.5;
             color: #ffffff;
         }
@@ -120,8 +107,7 @@
             }
         } 
         & h1 {
-            font-size: 90px;
-            font-weight: 700;
+            @include titleH1;
             color: #ffffff;
             margin: 10% 0 0 15%;
         } 
@@ -133,15 +119,12 @@
         @include backgroundImage;
         padding: 3% 3% 3% 3%;
         & h1 {
-            font-size: 90px;
-            font-weight: 700;
+            @include titleH1;
         }
         & h5 {
             width: 42%;
-            font-size: 17px;
-            font-weight: 300;
+            @include titleP;
             line-height: 1.5;
-            color: #262626;
             margin: -3% auto 3% auto;
         }
 
@@ -161,14 +144,8 @@
         }
         & a {
             width: 13%;
-            display: flex;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: 300;
-            justify-content: center;
-            color: #ffffff;
+            @include buttonS;
             background-color: #5585a2;
-            padding: 1%;
             margin: 2% auto 4% auto;
         }
     }
@@ -183,9 +160,8 @@
         }
         & p {
             width: 40%;
-            font-size: 17px;
+            @include titleP;
             line-height: 1.2;
-            font-weight: 300;
         }
         & input {
             width: 42%;
@@ -208,14 +184,12 @@
         @include backgroundImage;
         padding: 1% 0% 6% 0;
         & h1 {
-            font-size: 90px;
-            font-weight: 700;
+            @include titleH1;
             color: #ffffff;
         }
         & p {
             width: 38%;
-            font-size: 17px;
-            font-weight: 300;
+            @include titleP;
             line-height: 1.5;
             color: #ffffff;
             margin: -2% auto 3% auto;
@@ -239,14 +213,8 @@
         }
         & a {
             width: 13%;
-            display: flex;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: 300;
-            justify-content: center;
-            color: #ffffff;
+            @include buttonS;
             background-color: #f72b3b;
-            padding: 1%;
             margin: 3% auto 0 auto;
         }
     }
@@ -257,13 +225,11 @@
         @include backgroundImage;
         padding: 1% 0% 8% 0%;
         & h1 {
-            font-size: 90px;
-            font-weight: 700;
+            @include titleH1;
         }
         & p {
             width: 25%;
-            font-size: 17px;
-            font-weight: 300;
+            @include titleP;
             margin: -3% auto 3% auto;
         }
         &__communication {
@@ -271,24 +237,10 @@
             &_form {
                 width: 60%;
                 & input {
-                    width: 60%;
-                    font-size: 15px;
-                    font-weight: 300;
-                    color: #ffffff;
-                    background-color: #00c4c463;
-                    border: none;
-                    padding: 2%;
-                    margin: 1% 0;
+                    @include formS;
                 }
                 & textarea {
-                    width: 60%;
-                    font-size: 15px;
-                    font-weight: 300;
-                    color: #ffffff;
-                    background-color: #00c4c463;
-                    border: none;
-                    padding: 2%;
-                    margin: 1% 0;
+                    @include formS;
                 }
             }
             &_adress {
@@ -304,7 +256,6 @@
                 }
             }
         }
-
     }
 }
 
@@ -330,4 +281,34 @@
             color: #ff2b58;
         }
     }
+}
+
+.main .fresh__body a:hover {
+    background-color: #ff5f3385;
+}
+
+.main .services__list_element:hover {
+    background-color: #26262681;
+}
+
+.main .gallery__button a:hover {
+    background-color: #02090ed3;
+}
+
+.main .subscribe button:hover {
+    background-color: #727b8f;
+}
+
+.main .blog a:hover {
+    background-color: #c3abe6;
+}
+
+.main .contact__communication_form input:hover {
+    border-left: 5px solid #355b82;
+    background-color: #00c4c4;
+}
+
+.main .contact__communication_form textarea:hover {
+    border-left: 5px solid #355b82;
+    background-color: #00c4c4;
 }

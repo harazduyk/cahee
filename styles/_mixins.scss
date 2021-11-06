@@ -39,3 +39,34 @@
                     color: #ffffff;
                 }
 }
+
+@mixin titleH1 {
+    font-size: 90px;
+    font-weight: 700;
+}
+
+@mixin formS {
+    width: 60%;
+    font-size: 15px;
+    font-weight: 300;
+    color: #ffffff;
+    background-color: #00c4c463;
+    border: none;
+    padding: 2%;
+    margin: 1% 0;
+}
+
+@mixin buttonS {
+    display: flex;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    justify-content: center;
+    color: #ffffff;
+    padding: 1%;
+}
+
+@mixin titleP {
+    font-size: 17px;
+    font-weight: 300;
+}
