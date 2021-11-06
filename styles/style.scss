@@ -201,4 +201,53 @@
             padding: 0.7% 1% 1% 1%;
         }
     }
+    .blog {
+        width: 100%;
+        text-align: center;
+        background-image: url("../images/background_6.png");
+        @include backgroundImage;
+        padding: 1% 0% 6% 0;
+        & h1 {
+            font-size: 90px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+        & p {
+            width: 38%;
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 1.5;
+            color: #ffffff;
+            margin: -2% auto 3% auto;
+        }
+        &__bilboards {
+            display: flex;
+            justify-content: space-evenly;
+            &_block1 {
+                background-image: url("../images/blog_image1.png");
+                @include bilboardBlock;
+            }
+            &_block2 {
+                background-image: url("../images/blog_image2.png");
+                @include bilboardBlock;
+                margin: 0 -7%;
+            }
+            &_block3 {
+                background-image: url("../images/blog_image3.png");
+                @include bilboardBlock;
+            }
+        }
+        & a {
+            width: 13%;
+            display: flex;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 300;
+            justify-content: center;
+            color: #ffffff;
+            background-color: #f72b3b;
+            padding: 1%;
+            margin: 3% auto 0 auto;
+        }
+    }
 }
