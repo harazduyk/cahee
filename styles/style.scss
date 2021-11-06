@@ -172,4 +172,33 @@
             margin: 2% auto 4% auto;
         }
     }
+    .subscribe {
+        width: 100%;
+        background-image: url(../images/background_5.png);
+        @include backgroundImage;
+        padding: 8% 0 8% 10%;
+        & h1 {
+            font-size: 40px;
+            font-weight: 700;
+        }
+        & p {
+            width: 40%;
+            font-size: 17px;
+            line-height: 1.2;
+            font-weight: 300;
+        }
+        & input {
+            width: 42%;
+            padding: 1%;
+            margin: 2% 1.5% 0 0;
+        }
+        & button {
+            width: 12%;
+            font-size: 20px;
+            font-weight: 300;
+            color: #ffffff;
+            background-color: #96b92c;
+            padding: 0.7% 1% 1% 1%;
+        }
+    }
 }

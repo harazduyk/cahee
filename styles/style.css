@@ -236,4 +236,40 @@
   padding: 1%;
   margin: 2% auto 4% auto;
 }
+
+.main .subscribe {
+  width: 100%;
+  background-image: url(../images/background_5.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 8% 0 8% 10%;
+}
+
+.main .subscribe h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.main .subscribe p {
+  width: 40%;
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+.main .subscribe input {
+  width: 42%;
+  padding: 1%;
+  margin: 2% 1.5% 0 0;
+}
+
+.main .subscribe button {
+  width: 12%;
+  font-size: 20px;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #96b92c;
+  padding: 0.7% 1% 1% 1%;
+}
 /*# sourceMappingURL=style.css.map */
