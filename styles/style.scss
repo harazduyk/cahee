@@ -250,4 +250,84 @@
             margin: 3% auto 0 auto;
         }
     }
+    .contact {
+        width: 100%;
+        text-align: center;
+        background-image: url("../images/background_7.png");
+        @include backgroundImage;
+        padding: 1% 0% 8% 0%;
+        & h1 {
+            font-size: 90px;
+            font-weight: 700;
+        }
+        & p {
+            width: 25%;
+            font-size: 17px;
+            font-weight: 300;
+            margin: -3% auto 3% auto;
+        }
+        &__communication {
+            display: flex;
+            &_form {
+                width: 60%;
+                & input {
+                    width: 60%;
+                    font-size: 15px;
+                    font-weight: 300;
+                    color: #ffffff;
+                    background-color: #00c4c463;
+                    border: none;
+                    padding: 2%;
+                    margin: 1% 0;
+                }
+                & textarea {
+                    width: 60%;
+                    font-size: 15px;
+                    font-weight: 300;
+                    color: #ffffff;
+                    background-color: #00c4c463;
+                    border: none;
+                    padding: 2%;
+                    margin: 1% 0;
+                }
+            }
+            &_adress {
+                text-align: left;
+                & h3 {
+                    font-size: 17px;
+                    font-weight: 700;
+                    margin-top: 4%;
+                }
+                & h4 {
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+            }
+        }
+
+    }
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #262626;
+    padding: 2%;
+    & h4 {
+        font-size: 16px;
+        font-weight: 300;
+        color: #b9b9b9;
+    }
+    
+    & h5 {
+        font-size: 15px;
+        font-weight: 300;
+        color: #b9b9b9;
+        & span {
+            font-weight: 700;
+            color: #ff2b58;
+        }
+    }
 }
