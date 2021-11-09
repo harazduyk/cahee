@@ -1,6 +1,6 @@
 .main {
   width: 100%;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
 }
 
 .main .fresh {
@@ -16,13 +16,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 .main .fresh__head img {
-  margin: -2% 0 0 4.5%;
+  margin: 0% 0 0 4.5%;
 }
 
 .main .fresh__nav {
@@ -40,6 +43,7 @@
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 700;
+  color: #262626;
 }
 
 .main .fresh__nav_home {
@@ -55,13 +59,14 @@
 .main .fresh__body h1 {
   font-size: 60px;
   font-weight: 900;
+  margin: 0;
 }
 
 .main .fresh__body p {
   width: 30%;
   font-size: 17px;
   font-weight: 300;
-  margin: -2% 0 2% 0%;
+  margin: 3% 0 2% 0%;
 }
 
 .main .fresh__body a {
@@ -81,7 +86,7 @@
 }
 
 .main .fresh__scroll {
-  margin: 20% 0 0% 52%;
+  margin: 15% 0 0% 52%;
 }
 
 .main .about {
@@ -134,31 +139,31 @@
 }
 
 .main .services__list_element h5 {
-  height: 100px;
+  height: 6rem;
   font-size: 20px;
   font-weight: 700;
   border-right: 1px solid #bababa;
 }
 
-.main .services__list_element_online {
+.main .services__list_element img {
+  padding-left: 5%;
+}
+
+.main .services__list_online {
   padding: 40px 85px 0 20px;
 }
 
-.main .services__list_element_quality {
+.main .services__list_quality {
   padding: 40px 98px 0 25px;
 }
 
-.main .services__list_element_domestic {
+.main .services__list_domestic {
   width: 71%;
   padding: 28px 7px 0 0;
 }
 
-.main .services__list_element_well {
+.main .services__list_well {
   padding: 40px 103px 0 20px;
-}
-
-.main .services__list_element img {
-  padding-left: 5%;
 }
 
 .main .services h1 {
@@ -175,12 +180,13 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 3% 3% 3% 3%;
+  padding: 3%s;
 }
 
 .main .gallery h1 {
   font-size: 90px;
   font-weight: 700;
+  margin: 0;
 }
 
 .main .gallery h5 {
@@ -188,7 +194,7 @@
   font-size: 17px;
   font-weight: 300;
   line-height: 1.5;
-  margin: -3% auto 3% auto;
+  margin: 3% auto;
 }
 
 .main .gallery__line1 {
@@ -282,6 +288,7 @@
   font-size: 90px;
   font-weight: 700;
   color: #ffffff;
+  margin: 0;
 }
 
 .main .blog p {
@@ -290,7 +297,7 @@
   font-weight: 300;
   line-height: 1.5;
   color: #ffffff;
-  margin: -2% auto 3% auto;
+  margin: 2% auto 3% auto;
 }
 
 .main .blog__bilboards {
@@ -310,27 +317,6 @@
   background-repeat: no-repeat;
   text-align: left;
   padding: 2% 0% 2% 2%;
-}
-
-.main .blog__bilboards_block1_date {
-  width: 18%;
-  text-align: center;
-  background-color: #26262671;
-  border-radius: 5px;
-  padding: 1%;
-}
-
-.main .blog__bilboards_block1_date h2 {
-  font-size: 32px;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-.main .blog__bilboards_block1_date h3 {
-  font-size: 21px;
-  font-weight: 900;
-  color: #ffffff;
-  margin-top: -10%;
 }
 
 .main .blog__bilboards_block1 h4 {
@@ -357,27 +343,6 @@
   margin: 0 -7%;
 }
 
-.main .blog__bilboards_block2_date {
-  width: 18%;
-  text-align: center;
-  background-color: #26262671;
-  border-radius: 5px;
-  padding: 1%;
-}
-
-.main .blog__bilboards_block2_date h2 {
-  font-size: 32px;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-.main .blog__bilboards_block2_date h3 {
-  font-size: 21px;
-  font-weight: 900;
-  color: #ffffff;
-  margin-top: -10%;
-}
-
 .main .blog__bilboards_block2 h4 {
   font-size: 20px;
   font-weight: 700;
@@ -401,27 +366,6 @@
   padding: 2% 0% 2% 2%;
 }
 
-.main .blog__bilboards_block3_date {
-  width: 18%;
-  text-align: center;
-  background-color: #26262671;
-  border-radius: 5px;
-  padding: 1%;
-}
-
-.main .blog__bilboards_block3_date h2 {
-  font-size: 32px;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-.main .blog__bilboards_block3_date h3 {
-  font-size: 21px;
-  font-weight: 900;
-  color: #ffffff;
-  margin-top: -10%;
-}
-
 .main .blog__bilboards_block3 h4 {
   font-size: 20px;
   font-weight: 700;
@@ -433,6 +377,27 @@
   font-size: 13px;
   font-weight: 300;
   color: #ffffff;
+}
+
+.main .blog__bilboards_date {
+  width: 18%;
+  text-align: center;
+  background-color: #26262671;
+  border-radius: 5px;
+  padding: 1%;
+}
+
+.main .blog__bilboards_date h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.main .blog__bilboards_date h3 {
+  font-size: 21px;
+  font-weight: 900;
+  color: #ffffff;
+  margin-top: -10%;
 }
 
 .main .blog a {
@@ -465,13 +430,14 @@
 .main .contact h1 {
   font-size: 90px;
   font-weight: 700;
+  margin: 0;
 }
 
 .main .contact p {
   width: 25%;
   font-size: 17px;
   font-weight: 300;
-  margin: -3% auto 3% auto;
+  margin: 3% auto 3% auto;
 }
 
 .main .contact__communication {
@@ -523,6 +489,7 @@
 
 .footer {
   width: 100%;
+  font-family: 'Raleway', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

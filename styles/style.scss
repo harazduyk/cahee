@@ -1,8 +1,7 @@
 @import "mixins";
-
 .main {
     width: 100%;
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     & .fresh {
         width: 100%;
         background-image: url("../images/background_1.png");
@@ -10,9 +9,10 @@
         padding: 4% 8% 3% 8%;
         &__head {
             display: flex;
+            align-items: center;
             justify-content: space-between;
             & img {
-                margin: -2% 0 0 4.5%;
+                margin: 0% 0 0 4.5%;
             }
         }
         &__nav {
@@ -24,6 +24,7 @@
                 text-transform: uppercase;
                 font-size: 16px;
                 font-weight: 700;
+                color: #262626;
             }
             &_home {
                 border-top: 3px solid #ff6033;
@@ -36,11 +37,12 @@
             & h1 {
                 font-size: 60px;
                 font-weight: 900;
+                margin: 0;
             }
             & p {
                 width: 30%;
                 @include titleP;
-                margin: -2% 0 2% 0%;
+                margin: 3% 0 2% 0%;
             }
             & a {
                 width: 15%;
@@ -49,8 +51,7 @@
             }
         }
         &__scroll {
-            margin: 20% 0 0% 52%;
-
+            margin: 15% 0 0% 52%;
         }
     }
     .about {
@@ -79,55 +80,55 @@
             justify-content: center;
             text-align: center;
             background-color: #ffffff;
-            box-shadow: 1px 1px 6px 2px rgba(0,0,0,0.3);
-            -webkit-box-shadow: 1px 1px 6px 2px rgba(0,0,0,0.3);
-            -moz-box-shadow: 1px 1px 6px 2px rgba(0,0,0,0.3);
+            box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.3);
+            -webkit-box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.3);
             margin-top: 5%;
             & h5 {
-                height: 100px;
+                height: 6rem;
                 font-size: 20px;
                 font-weight: 700;
                 border-right: 1px solid #bababa;
             }
-            &_online {
-                padding: 40px 85px 0 20px;
-            }
-            &_quality {
-                padding: 40px 98px 0 25px;
-            }
-            &_domestic {
-                width: 71%;
-                padding: 28px 7px 0 0;
-            }
-            &_well {
-                padding: 40px 103px 0 20px;
-            }
             & img {
                 padding-left: 5%;
             }
-        } 
+        }
+        &__list_online {
+            padding: 40px 85px 0 20px;
+        }
+        &__list_quality {
+            padding: 40px 98px 0 25px;
+        }
+        &__list_domestic {
+            width: 71%;
+            padding: 28px 7px 0 0;
+        }
+        &__list_well {
+            padding: 40px 103px 0 20px;
+        }
         & h1 {
             @include titleH1;
             color: #ffffff;
             margin: 10% 0 0 15%;
-        } 
+        }
     }
     .gallery {
         width: 100%;
         text-align: center;
         background-image: url("../images/background_4.png");
         @include backgroundImage;
-        padding: 3% 3% 3% 3%;
+        padding: 3%s;
         & h1 {
             @include titleH1;
+            margin: 0;
         }
         & h5 {
             width: 42%;
             @include titleP;
             line-height: 1.5;
-            margin: -3% auto 3% auto;
+            margin: 3% auto;
         }
-
         &__line1 {
             display: flex;
             justify-content: center;
@@ -186,13 +187,14 @@
         & h1 {
             @include titleH1;
             color: #ffffff;
+            margin: 0;
         }
         & p {
             width: 38%;
             @include titleP;
             line-height: 1.5;
             color: #ffffff;
-            margin: -2% auto 3% auto;
+            margin: 2% auto 3% auto;
         }
         &__bilboards {
             display: flex;
@@ -210,6 +212,24 @@
                 background-image: url("../images/blog_image3.png");
                 @include bilboardBlock;
             }
+            &_date {
+                width: 18%;
+                text-align: center;
+                background-color: #26262671;
+                border-radius: 5px;
+                padding: 1%;
+                & h2 {
+                    font-size: 32px;
+                    font-weight: 700;
+                    color: #ffffff;
+                }
+                & h3 {
+                    font-size: 21px;
+                    font-weight: 900;
+                    color: #ffffff;
+                    margin-top: -10%;
+                }
+            }
         }
         & a {
             width: 13%;
@@ -226,11 +246,12 @@
         padding: 1% 0% 8% 0%;
         & h1 {
             @include titleH1;
+            margin: 0;
         }
         & p {
             width: 25%;
             @include titleP;
-            margin: -3% auto 3% auto;
+            margin: 3% auto 3% auto;
         }
         &__communication {
             display: flex;
@@ -261,6 +282,7 @@
 
 .footer {
     width: 100%;
+    font-family: 'Raleway', sans-serif;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -271,7 +293,6 @@
         font-weight: 300;
         color: #b9b9b9;
     }
-    
     & h5 {
         font-size: 15px;
         font-weight: 300;
